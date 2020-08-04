@@ -106,7 +106,7 @@ define gui.textbox_height = 182
 
 ## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5 is
 ## center, and 1.0 is the bottom.
-define gui.textbox_yalign = 0.99
+define gui.textbox_yalign = 1.0
 
 
 ## The placement of the speaking character's name, relative to the textbox.
@@ -125,7 +125,7 @@ define gui.namebox_height = 39
 
 ## The borders of the box containing the character's name, in left, top, right,
 ## bottom order.
-define gui.namebox_borders = Borders(5, 5, 5, 2)
+define gui.namebox_borders = Borders(20, 0, 20, 0)
 
 ## If True, the background of the namebox will be tiled, if False, the
 ## background if the namebox will be scaled.
@@ -295,7 +295,7 @@ define gui.confirm_frame_borders = Borders(40, 40, 40, 40)
 define gui.skip_frame_borders = Borders(16, 5, 50, 5)
 
 ## The frame that is used as part of the notify screen.
-define gui.notify_frame_borders = Borders(16, 5, 40, 5)
+define gui.notify_frame_borders = Borders(16, 5, 21, 5)
 
 ## Should frame backgrounds be tiled?
 define gui.frame_tile = False

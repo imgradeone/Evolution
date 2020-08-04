@@ -19,16 +19,10 @@ label start:
     $ allow_skipping = True
     $ config.allow_skipping = True
     
-    # 确定好 label，然后改动下面几行
-    if persistent.example_seen:
-        call tutorial_selection from _call_tutorial_selection
+    if persistent.intro_seen:
+        call script_ch0_mod
     else:
-        call example_chapter from _call_example_chapter
-    # 就动注释夹起来的这几行
-
-    # 对于教程，直接使用下面一行：
-    # call meet_monika
-
+        call intro
     return
 
 label endgame(pause_length=4.0):

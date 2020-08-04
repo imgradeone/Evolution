@@ -1352,6 +1352,8 @@ default persistent.clearall = None
 default persistent.menu_bg_m = None
 default persistent.first_load = None
 
+default persistent.intro_seen = False
+
 ###### Other global variables ######
 # It's good practice to define global variables here, just so you know what you can call later
 

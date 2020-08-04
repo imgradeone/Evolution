@@ -394,8 +394,8 @@ screen quick_menu():
             textbutton _("自动") action Preference("auto-forward", "toggle")
             textbutton _("存档") action ShowMenu('save')
             textbutton _("读档") action ShowMenu('load')
-            #textbutton _("Q.Save") action QuickSave()
-            #textbutton _("Q.Load") action QuickLoad()
+            textbutton _("快速存档") action QuickSave()
+            textbutton _("快速读档") action QuickLoad()
             textbutton _("设置") action ShowMenu('preferences')
 
 
@@ -559,7 +559,7 @@ screen main_menu():
         add "menu_art_m"
         add "menu_fade"
 
-    key "K_ESCAPE" action Quit(confirm=False)
+    key "K_ESCAPE" action Quit(confirm=True)
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
@@ -873,7 +873,7 @@ screen file_slots(title):
 
                 #textbutton _("{#auto_page}A") action FilePage("auto")
 
-                #textbutton _("{#quick_page}Q") action FilePage("quick")
+                textbutton _("{#quick_page}快") action FilePage("quick")
 
                 # range(1, 10) gives the numbers from 1 to 9.
                 for page in range(1, 10):
@@ -1419,7 +1419,7 @@ screen dialog(message, ok_action):
                 xalign 0.5
                 spacing 100
 
-                textbutton _("OK") action ok_action
+                textbutton _("好的！") action ok_action
 
 image confirm_glitch:
     "gui/overlay/confirm_glitch.png"
