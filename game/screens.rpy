@@ -965,6 +965,13 @@ screen preferences():
                     textbutton _("选择选项之后") action Preference("after choices", "toggle")
                     #textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
 
+                # vbox:
+                #     style_prefix "check"
+                #     label _("Mod 设置")
+                #     textbutton _("启用 Rollback"):
+                #         action ToggleField(persistent, "disable_awful_music")
+                #         selected persistent.disable_awful_music
+
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
 

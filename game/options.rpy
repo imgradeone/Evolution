@@ -1,7 +1,7 @@
 # 部分注释参照 https://github.com/GanstaKingofSA/DDLCModTemplate2.0
 
 # 在这里命名你的 Mod
-define config.name = "Doki Doki Evolution"
+define config.name = "Evolution of the Literature Club 文学部的进化"
 
 # 在主界面展示项目名、版本号 (True or False)
 define gui.show_name = False
@@ -87,7 +87,7 @@ define config.layers = [ 'master', 'transient', 'screens', 'overlay', 'front' ]
 # Other things to not mess with
 define config.image_cache_size = 64
 define config.predict_statements = 50
-define config.rollback_enabled = config.developer
+define config.rollback_enabled = False
 define config.menu_clear_layers = ["front"]
 define config.gl_test_image = "white"
 
